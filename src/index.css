@@ -15,19 +15,72 @@ code {
 
 
 .news-feed {
-  background-color: red;
+  background-color:  #4088A9;
+  padding: 10px;
+  margin: 5px;
+  /* box-shadow: 0.3px 10px rgb(0 0 0 / 0.2); */
+  max-width: 400px;
 }
 
+.news-feed-wrapper {
+  background-color:  #6DB49B;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+#feed-header {
+  text-align: center;
+}
+
+
 .currency-converter {
-  background-color: blue;
+  background-color: #6DB49B;
+  padding: 10px;
+  margin: 5px;
+  /* box-shadow: 0.3px 10px rgb(0 0 0 / 0.2); */
+  text-align: center;
+
 }
 
 .app {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
 }
 
+.app-wrapper {
+  display: flex;
+}
+
 .exchange-rate {
-  background-color: green;
+  background-color: #DDEB9D;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+}
+
+.input-box {
+  background-color: #A7D694;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.input, select {
+  border: none;
+}
+button {
+  border: none;
+  float: right;
+  margin: 2px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: salmon;
+}
+
+button:hover {
+  background-color: springgreen;
+
 }

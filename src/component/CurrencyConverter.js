@@ -4,7 +4,7 @@ import axios from 'axios'
  
  const CurrencyConverter = () => {
 
-    const currencies = ['BTD', 'ETH', 'USD', 'XRP', 'LTC', 'ADA', 'KRW'].sort()
+    const currencies = ['BTD', 'ETH', 'USD', 'XRP', 'LTC', 'ADA', 'KRW']
     const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState('BTC')
     const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState('USD')
     const [amount, setAmount] = useState(1)
@@ -34,9 +34,9 @@ import axios from 'axios'
             };
 
             axios.request(options).then((response) => { 
-                // console.log(response.data[  'Realtime Currency Exchange Rate']['5. Exchange Rate']);
+                console.log(response.data);
                 // setExchangeRate(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate'])
-                setResult(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate']* amount)
+                setResult(response.data['Realtime Currency Exchange Rate']['5. Exchange Rate'] * amount)
                 // setPrimaryCurrencyExchanged(chosenPrimaryCurrency)
                 // setSecondaryCurrencyExchanged(chosenSecondaryCurrency)
                 setExchangedData({

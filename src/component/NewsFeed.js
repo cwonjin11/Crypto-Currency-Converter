@@ -32,11 +32,13 @@ import axios from 'axios'
     return (
       <div className="news-feed">
 
-        <h2>News Feed</h2>
-        {first7Articles?.map((article, _index) => (
-          <div key={_index}>
-           <a href={article.url}><p>{article.title}</p></a> 
-          </div>))}
+        <h2 id="feed-header">News Feed</h2>
+        <div className="news-feed-wrapper">
+          {first7Articles?.map((article, _index) => (
+            <div key={_index}>
+            <a href={article.url}><p><li>{article.title}</li></p></a> 
+            </div>))}
+        </div>
       </div>
     );
   }
