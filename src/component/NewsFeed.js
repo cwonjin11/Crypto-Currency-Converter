@@ -9,9 +9,10 @@ import axios from 'axios'
 
         const options = {
           method: 'GET',
-          url: 'https://crypto-news-live.p.rapidapi.com/news',
+          // url: 'https://crypto-news-live.p.rapidapi.com/news',
+          url: 'https://cryptocurrency-news-live.p.rapidapi.com/bitcoin-news',
           headers: {
-            'x-rapidapi-host': 'crypto-news-live.p.rapidapi.com',
+            'x-rapidapi-host': 'cryptocurrency-news-live.p.rapidapi.com',
             'x-rapidapi-key': process.env.REACT_APP_RAPID_API_KEY
           }
         }
